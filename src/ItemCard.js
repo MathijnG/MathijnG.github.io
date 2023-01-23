@@ -1,4 +1,4 @@
-import {AspectRatio, Card, createStyles, Image, Modal, Text} from "@mantine/core";
+import {AspectRatio, Card, createStyles, Grid, Image, Modal, Text, Title} from "@mantine/core";
 import {useState} from "react";
 
 const ItemCard = ({article}) => {
@@ -29,6 +29,14 @@ const ItemCard = ({article}) => {
             lineHeight: 1.4,
             margin: 0,
             color: 'inherit'
+        },
+
+        modalClose: {
+
+        },
+
+        modalInner: {
+            padding: 20
         }
     }));
 
@@ -38,15 +46,26 @@ const ItemCard = ({article}) => {
         <>
             <Modal
                 centered
-                size="70%"
+                size="50%"
                 opened={opened}
+                withCloseButton={false}
                 onClose={() => setOpened(false)}
-                title={article.title}
                 classNames={{
-                    title: classes.modalTitle
+                    title: classes.modalTitle,
+                    close: classes.modalClose,
+                    body: classes.modalInner,
                 }}
             >
+                <Title order={2}>{article.title}</Title>
                 <Text>{article.component}</Text>
+                {/*<Grid>
+                    <Grid.Col span={2}></Grid.Col>
+                    <Grid.Col span={8}>
+                        <Title order={2}>{article.title}</Title>
+                        <Text>{article.component}</Text>
+                    </Grid.Col>
+                    <Grid.Col span={2}></Grid.Col>
+                </Grid>*/}
             </Modal>
             <Card key={article.title} p="md" radius="md" component="a" className={classes.card} onClick={() => setOpened(true)}>
                 <AspectRatio ratio={1920 / 1080}>
