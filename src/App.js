@@ -75,7 +75,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-const HeroPortfolio = () => {
+const App = () => {
   const { classes } = useStyles();
 
   const [cards, setCards] = useState([]);
@@ -146,4 +146,4 @@ const HeroPortfolio = () => {
   );
 }
 
-export default HeroPortfolio;
+export default App;

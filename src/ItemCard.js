@@ -3,6 +3,8 @@ import {useState} from "react";
 
 const ItemCard = ({article}) => {
 
+    const BREAKPOINT = '@media (max-width: 755px)';
+
     const [opened, setOpened] = useState(false);
 
     const useStyles = createStyles((theme) => ({
@@ -31,12 +33,14 @@ const ItemCard = ({article}) => {
             color: 'inherit'
         },
 
-        modalClose: {
-
-        },
-
         modalInner: {
             padding: 20
+        },
+
+        modalModal: {
+            [BREAKPOINT]: {
+                width: "100%"
+            }
         }
     }));
 
@@ -52,7 +56,7 @@ const ItemCard = ({article}) => {
                 onClose={() => setOpened(false)}
                 classNames={{
                     title: classes.modalTitle,
-                    close: classes.modalClose,
+                    modal: classes.modalModal,
                     body: classes.modalInner,
                 }}
             >
