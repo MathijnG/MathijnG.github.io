@@ -1,6 +1,8 @@
-import {Container, Text, SimpleGrid, createStyles} from '@mantine/core';
+import {Container, Text, SimpleGrid, createStyles, Input, Select, Grid} from '@mantine/core';
 import ItemCard from "./ItemCard";
 import data from "./data";
+import {IconArrowsSort, IconSearch} from "@tabler/icons";
+import {useEffect, useState} from "react";
 
 const BREAKPOINT = '@media (max-width: 755px)';
 
@@ -55,6 +57,10 @@ const useStyles = createStyles((theme) => ({
     },
   },
 
+  inputFields: {
+    marginBottom: 40,
+  },
+
   control: {
     height: 54,
     paddingLeft: 38,
@@ -72,9 +78,36 @@ const useStyles = createStyles((theme) => ({
 const HeroPortfolio = () => {
   const { classes } = useStyles();
 
-  const cards = data.map((article, i) => (
-    <ItemCard key={i} article={article} />
-  ));
+  const [cards, setCards] = useState([]);
+
+  const changeSort = (value) => {
+    let sortedData = null;
+    if (value === 'new') {
+      sortedData = data.sort((a, b) => new Date(b.date) - new Date(a.date));
+    } else if (value === 'old') {
+      sortedData = data.sort((a, b) => new Date(a.date) - new Date(b.date));
+    } else if (value === 'a-z') {
+      sortedData = data.sort((a, b) => a.title.localeCompare(b.title));
+    } else if (value === 'z-a') {
+      sortedData = data.sort((a, b) => b.title.localeCompare(a.title));
+    }
+    if (sortedData) {
+      setCards(sortedData.map((article, i) => (
+          <ItemCard key={i} article={article} />
+      )));
+    }
+  }
+
+  const searchData = (value) => {
+    let searchedData = data.filter((article) => article.title.toLowerCase().includes(value.toLowerCase()));
+    setCards(searchedData.map((article, i) => (
+        <ItemCard key={i} article={article} />
+    )));
+  }
+
+  useEffect(() => {
+    changeSort('new');
+  }, []);
 
   return (
     <div className={classes.wrapper}>
@@ -85,6 +118,25 @@ const HeroPortfolio = () => {
             Mathijn Goossens
           </Text>
         </h1>
+
+        <Grid className={classes.inputFields}>
+          <Grid.Col span={8}>
+            <Input onChange={(e)=>searchData(e.target.value)} icon={<IconSearch size={18} />} placeholder="Search..."/>
+          </Grid.Col>
+          <Grid.Col span={4}>
+            <Select
+                onChange={(value)=>changeSort(value)}
+                icon={<IconArrowsSort size={16} />}
+                placeholder="Sort by"
+                data={[
+                  { value: 'new', label: 'Date: newest' },
+                  { value: 'old', label: 'Date: oldest' },
+                  { value: 'a-z', label: 'Title: A - Z' },
+                  { value: 'z-a', label: 'Title: Z - A' }
+                ]}
+            />
+          </Grid.Col>
+        </Grid>
 
         <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
           {cards}
