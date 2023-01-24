@@ -8,7 +8,10 @@ import OneBlinq from "./assets/oneblinq.png";
 import NieuwLerenParkstad from "./assets/logo-NLP.png";
 import GrowBotic from "./assets/growbotic.png";
 import Webstudio7 from "./assets/logo-webstudio7.png";
+import CoolEventsApp from "./assets/coolevents.png";
 import Default from "./assets/default.jpg";
+
+import {Image} from "@mantine/core";
 
 const data = [
     {
@@ -33,6 +36,15 @@ const data = [
         title: 'OneBlinq - Stuurmen',
         image: OneBlinq,
         date: new Date("January 1, 2022"),
+        component:
+            <>
+                <p>
+                    In the 3rd semester of my education I was assigned to do a project for Stuurmen with a group.
+                    Stuurmen is a design company that, among other things, makes Figma plugins.
+                    The project was to create a license management system for Figma plugins.
+                    For this application we used Reactjs & ASP.NET Core. The customer was also very satisfied with the result.
+                </p>
+            </>
     },
     {
         title: 'Ticket system - BAS World',
@@ -43,6 +55,15 @@ const data = [
         title: 'Cool Events',
         image: CoolEvents,
         date: new Date("February 1, 2022"),
+        component:
+            <>
+                <p>
+                    CoolEvents is a project that I made during my education.
+                    CoolEvents is an event listing service that allows users to create and review events.
+                    For this application I used ReactJS & Spring Boot.
+                </p>
+                <Image alt="coolevents-app" src={CoolEventsApp} />
+            </>
     },
     {
         title: 'Webstudio 7 projects',
@@ -103,6 +124,13 @@ const data = [
         title: 'Nieuw Leren Parkstad',
         image: NieuwLerenParkstad,
         date: new Date("July 1, 2019"),
+        component:
+            <>
+                <p>
+                    Ik heb een leuke Wordpress website gedesigned en gemaakt. De website heet <a target="_blank" href="https://nieuwlerenparkstad.nl">nieuwlerenparkstad.nl</a>.
+                    Nieuw Leren Parkstad organiseert onderwijsprojecten voor het voorgezet onderwijs.
+                </p>
+            </>
     },
 ];
 
