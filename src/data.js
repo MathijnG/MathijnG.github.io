@@ -10,6 +10,7 @@ import GrowBotic from "./assets/growbotic.png";
 import Webstudio7 from "./assets/logo-webstudio7.png";
 import CoolEventsApp from "./assets/coolevents.png";
 import Default from "./assets/default.jpg";
+import MediaanOcpp from "./assets/ocpp.png";
 
 import {Image} from "@mantine/core";
 
@@ -20,7 +21,7 @@ const data = [
         date: new Date(),
         component:
             <>
-                <p></p>
+                <p>In my free time I am working on a project management tool.</p>
             </>
     },
     {
@@ -29,7 +30,10 @@ const data = [
         date: new Date("January 1, 2023"),
         component:
             <>
-                <p>During my internship at Mediaan I worked on a project with electric car chargers. The idea was to create a dashboard to manage the chargers that are located by the Mediaan office in Heerlen.</p>
+                <p>During my internship at Mediaan I worked on a project with electric car chargers. The project was to create a dashboard to manage the chargers that are located by the Mediaan office in Heerlen.</p>
+                <p>The application included functionalities such as: reserving a charging station, requesting a session, receiving notifications when the car is full, being able to view sessions as an administrator and the application must also communicate with the chargers themselves.</p>
+                <p>To test the application and because there is a possibility that it will not be possible to communicate with the actual chargers, a simulation environment also was created to simulate the chargers. This was done with the OCPP protocol.</p>
+                <Image style={{width: "40%", margin: "auto", marginTop: "1rem"}} alt="mediaan-ocpp" src={MediaanOcpp} />
             </>
     },
     {
@@ -127,10 +131,14 @@ const data = [
         component:
             <>
                 <p>
-                    Ik heb een leuke Wordpress website gedesigned en gemaakt. De website heet <a target="_blank" href="https://nieuwlerenparkstad.nl">nieuwlerenparkstad.nl</a>.
-                    Nieuw Leren Parkstad organiseert onderwijsprojecten voor het voorgezet onderwijs.
+                    I designed and made a fun Wordpress website. The website is called <a rel="noreferrer" target="_blank" href="https://nieuwlerenparkstad.nl">nieuwlerenparkstad.nl</a>. Nieuw Leren Parkstad organizes educational projects for high school educations.
                 </p>
             </>
+    },
+    {
+        title: 'Container vervoer',
+        image: Default,
+        date: new Date("July 1, 2020")
     },
 ];
 

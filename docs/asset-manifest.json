@@ -1,6 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.c3a4b9a8.js",
+    "main.js": "/static/js/main.4a6a4956.js",
+    "static/media/coolevents.png": "/static/media/coolevents.7ce03852c929de56c6f3.png",
     "static/media/logo-NLP.png": "/static/media/logo-NLP.4e1dc3bd9a23ba9dc269.png",
     "static/media/logo-webstudio7.png": "/static/media/logo-webstudio7.ab4a2558abd4661c936f.png",
     "static/media/Apache_Spark_logo.png": "/static/media/Apache_Spark_logo.aacc1f68c53460e26631.png",
@@ -9,13 +10,14 @@
     "static/media/mediaan_logo.jpeg": "/static/media/mediaan_logo.2138627d65b5c666b89e.jpeg",
     "static/media/CoolEventsLogo.png": "/static/media/CoolEventsLogo.a987b0a875986098be9d.png",
     "static/media/default.jpg": "/static/media/default.59583c4346cc9fae6896.jpg",
+    "static/media/ocpp.png": "/static/media/ocpp.676a544e76dcbe565cb6.png",
     "static/media/basworld.jpg": "/static/media/basworld.ee64aee9b374905c7fbd.jpg",
     "static/media/unlock.png": "/static/media/unlock.bc6fa50ccb6927bdb698.png",
     "static/media/oneblinq.png": "/static/media/oneblinq.9989d37a1f1703d6180b.png",
     "index.html": "/index.html",
-    "main.c3a4b9a8.js.map": "/static/js/main.c3a4b9a8.js.map"
+    "main.4a6a4956.js.map": "/static/js/main.4a6a4956.js.map"
   },
   "entrypoints": [
-    "static/js/main.c3a4b9a8.js"
+    "static/js/main.4a6a4956.js"
   ]
 }
