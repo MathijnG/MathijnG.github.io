@@ -11,10 +11,29 @@ import Webstudio7 from "./assets/logo-webstudio7.png";
 import CoolEventsApp from "./assets/coolevents.png";
 import Default from "./assets/default.jpg";
 import MediaanOcpp from "./assets/ocpp.png";
+import InnoBeweegLab from "./assets/innobeweeglab.png";
 
 import {Image} from "@mantine/core";
 
 const data = [
+    {
+        title: 'Gamification survey platform - InnoBeweegLab',
+        image: InnoBeweegLab,
+        date: new Date(),
+        component:
+            <>
+
+            </>
+    },
+    {
+        title: 'No-code automation tool',
+        image: Default,
+        date: new Date(),
+        component:
+            <>
+
+            </>
+    },
     {
         title: 'Project Management Tool',
         image: Default,
@@ -78,6 +97,12 @@ const data = [
         title: 'Pentesting medical company',
         image: Cyber,
         date: new Date("July 1, 2022"),
+        component:
+            <>
+                <p>
+                    In my 4th semester (Cyber Security) we are assigned to pentest a medical company.
+                </p>
+            </>
     },
     {
         title: 'Unlock - Serious Game',
@@ -109,9 +134,9 @@ const data = [
         date: new Date("June 1, 2022"),
         component:
             <>
-                <p>During my 4th semester I was sorted into a project group and our task was the following:</p>
+                <p>During my 4th semester (Cyber Security) I was sorted into a project group and our task was the following:</p>
                 <p>"To speed up processing intensive software we can distribute the work over multiple systems. Our aim for this project is to build an environment that will allow us to submit code to a computing cluster in a way that it is spread out and executed on each individual node in the cluster. The results of the processing can then be collected and reflected to the user. This way the code can be spread out over several servers / nodes in our cluster making the computing process much faster than running the process on a single host."</p>
-                <p>Eventually we created a application that allowed us to submit code that would run on multiple nodes with a faster runtime. We used Apache Spark with Hadoop as our cluster framework.</p>
+                <p>We created an application that allowed us to submit code that would run on multiple nodes with a faster runtime. We used Apache Spark with Hadoop as our cluster framework.</p>
             </>
     },
     {
@@ -120,7 +145,7 @@ const data = [
         date: new Date("April 1, 2021"),
     },
     {
-        title: '3D Survival Game (Work in progress)',
+        title: '3D Survival Game',
         image: Default,
         date: new Date("October 1, 2021"),
     },
