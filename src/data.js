@@ -24,7 +24,19 @@ const data = [
         date: new Date(),
         component:
             <>
-
+                <p>
+                    The stakeholders for this project are the people from InnoBeweegLab and the municipality of Eindhoven.
+                    InnoBeweegLab is a research and innovation centre for a range of activities focused on sports, games and exercise.
+                </p>
+                <p>
+                    Their aim and goal is to achieve positive social impact through encouraging an active lifestyle by
+                    gathering the wishes and needs of municipalities, housing corporations and schools.
+                    To achieve this they wish to have a digital tool to increase the reach of the exercise research among various target groups in a municipality.
+                    This way resident would have more input in the (re)development of their neighbourhood.
+                </p>
+                <p>
+                    The project goal is to develop a web application that is able to collect various kinds of user input on different locations within a municipality. The aim is to use the user input in researching the demographics of the target user, possibilities of the environment, and the needs/wishes of the target group and organizations in the area. In turn this would lead to creating more innovative ideas and promising solutions that contribute to a healthy active lifestyle through play and exercise.
+                </p>
             </>
     },
     {
@@ -33,16 +45,16 @@ const data = [
         date: new Date(),
         component:
             <>
-
-            </>
-    },
-    {
-        title: 'Project Management Tool',
-        image: Default,
-        date: new Date(),
-        component:
-            <>
-                <p>In my free time I am working on a project management tool.</p>
+                <p>
+                    In my 6th semester I created a fun personal project.
+                    I created a tool that can automate simple tasks. In the application you can create a workflow.
+                    This is a flow of certain actions that can trigger automatically. Actions can be created and reordered within this workflow.
+                </p>
+                <p>
+                    Actions can be simple tasks like sending e-mails, sending standard messages, or modifying files.
+                    In a workflow you can also create a conditional statement.
+                    This is for example an IF statement that can take different directions based on information given by previous run actions.
+                </p>
             </>
     },
     {
@@ -125,6 +137,12 @@ const data = [
             <>
                 <p>
                     In my 4th semester (Cyber Security) we are assigned to pentest a medical company.
+                    We made a pentest agreement where we would test several parts of the company.
+                    We tested the networks, wireless networks, web-applications and did some social engineering like phishing emails and physical location testing.
+                </p>
+                <p>
+                    After the testing we did not find any major vulnerabilities. But we found that the social engineering was very effective.
+                    I did learn many interesting techniques to pentest a company.
                 </p>
             </>
     },
