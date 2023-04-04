@@ -12,6 +12,8 @@ import CoolEventsApp from "./assets/coolevents.png";
 import Default from "./assets/default.jpg";
 import MediaanOcpp from "./assets/ocpp.png";
 import InnoBeweegLab from "./assets/innobeweeglab.png";
+import ContainerVervoer from "./assets/containervervoer.png";
+import TowerDefence from "./assets/TowerDefenceGrid.png";
 
 import {Image} from "@mantine/core";
 
@@ -73,6 +75,12 @@ const data = [
         title: 'Ticket system - BAS World',
         image: BasWorld,
         date: new Date("June 1, 2021"),
+        component:
+            <>
+                <p>
+                    At school I made an internal ticket management system for Bas World with a group. Bas World is Europe's largest dealer in second-hand trucks and trailers. We used Laravel for the application.
+                </p>
+            </>
     },
     {
         title: 'Cool Events',
@@ -92,6 +100,22 @@ const data = [
         title: 'Webstudio 7 projects',
         image: Webstudio7,
         date: new Date("July 1, 2020"),
+        component:
+            <>
+                <p>
+                    During my time at Webstudio 7 I worked on many different Wordpress websites and helped with web-design projects.
+                    Some fun projects I worked on are:
+                    <ul>
+                        <li><a rel="noreferrer" target="_blank" href="https://popontop.nl">popontop.nl</a></li>
+                        <li><a rel="noreferrer" target="_blank" href="https://toabv.com">toabv.com</a></li>
+                        <li><a rel="noreferrer" target="_blank" href="https://stichtingfsi.nl">stichtingfsi.nl</a></li>
+                        <li><a rel="noreferrer" target="_blank" href="https://powerarea.nl">powerarea.nl</a></li>
+                        <li><a rel="noreferrer" target="_blank" href="https://joyflowers.nl/">joyflowers.nl</a></li>
+                        <li><a rel="noreferrer" target="_blank" href="https://bowlo.nl">bowlo.nl</a></li>
+                    </ul>
+                    And many more
+                </p>
+            </>
     },
     {
         title: 'Pentesting medical company',
@@ -122,11 +146,35 @@ const data = [
         title: 'Growbotic',
         image: GrowBotic,
         date: new Date("January 1, 2021"),
+        component:
+            <>
+                <p>
+                    During my first semester we as a group created a seed-planting robot.
+                    The idea was that the robot could automatically plant and water tree seeds to make the process of planting trees automatic and faster.
+                    The robot can also be controlled with an app to adjust settings. You can connect to the robot via Bluetooth. You can then start and stop the robot and adjust the speed.
+                </p>
+                <p>
+                    At the end of the project we created a good prototype of the robot.
+                    My focus was on the app control part of the project and I successfully created an app that could start/stop and speed up the robot remotely via Bluetooth.
+                </p>
+            </>
     },
     {
         title: 'TowerDefence - Game & Leaderboard',
-        image: Default,
+        image: TowerDefence,
         date: new Date("June 1, 2021"),
+        component:
+            <>
+                <p>
+                    This project consisted of two parts. A game and a website. The idea was that a user could create an account in the website and use that account in the game.
+                    Most of the game data would also be saved within this account and offer unique features like a friend-system and a leaderboard.
+                </p>
+                <p>
+                    The game was a tower defense game.
+                    Enemies try to get to a location in the map that you must defend with turrets and walls.
+                    In the game I also created an endless level to get high scores working.
+                </p>
+            </>
     },
     {
         title: 'Distributed Computing Project',
@@ -140,14 +188,17 @@ const data = [
             </>
     },
     {
-        title: '3D Terrain Generation in Unity',
-        image: Default,
-        date: new Date("April 1, 2021"),
-    },
-    {
         title: '3D Survival Game',
         image: Default,
         date: new Date("October 1, 2021"),
+        component:
+            <>
+                <p>
+                    As a fun project I started creating a 3D survival game in Unity.
+                    I worked on the project for about half a year I made good progress.
+                    I created an inventory system, player movement, building system, crafting system, and much more.
+                </p>
+            </>
     },
     {
         title: 'Nieuw Leren Parkstad',
@@ -161,9 +212,18 @@ const data = [
             </>
     },
     {
-        title: 'Container vervoer',
-        image: Default,
-        date: new Date("July 1, 2020")
+        title: 'Container vervoer algorithm challenge',
+        image: ContainerVervoer,
+        date: new Date("July 1, 2020"),
+        component:
+            <>
+                <p>
+                    During my 2nd semester I did a algorithm challenge where the challenge was to generate a container ship.
+                    In this challenge there where different types of containers, each with there own rules. For example the valuable containers always needed to have access and the cooled container needed to be in front of the ship.
+                    Since I liked Unity I also created a 3D GUI where the container is also visually drawn.
+                    <Image style={{marginTop: "1rem"}} src={ContainerVervoer} alt={"container-vervoer-challenge"} />
+                </p>
+            </>
     },
 ];
 
