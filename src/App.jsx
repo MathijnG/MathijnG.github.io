@@ -100,7 +100,7 @@ function App() {
                         />
                     </div>
                     <div className="absolute text-center w-full mt-[6rem] mb-[6rem]">
-                        <h1 className="text-[6rem] font-bold text-white">Mathijn Goossens</h1>
+                        <h1 className="md:text-[6rem] text-[4rem] font-bold text-white">Mathijn Goossens</h1>
                         <div className="flex justify-center gap-12 mt-10">
                             <a target="_blank" href="https://www.linkedin.com/in/mathijn-goossens/" className="social-icon">
                                 <svg fill="white" viewBox="0 0 448 512"
@@ -125,10 +125,10 @@ function App() {
                             </a>
                         </div>
                         <div className="mt-[10rem] grid justify-center gap-[3rem] mb-[10rem]">
-                            <a target="_blank" href="https://web-fusion.nl" className="project-card bg-[#1A3E9B] p-8 rounded-2xl w-[800px] h-[300px] flex justify-center">
+                            <a target="_blank" href="https://web-fusion.nl" className="project-card bg-[#1A3E9B] p-8 rounded-2xl w-[300px] md:w-[800px] h-[300px] flex justify-center">
                                 <img className="w-[320px] m-auto" src={Webfusion} alt="webfusion"/>
                             </a>
-                            <a target="_blank" href="https://ai-vo.nl" className="project-card bg-[#12D678] p-8 rounded-2xl w-[800px] h-[300px] flex justify-center">
+                            <a target="_blank" href="https://ai-vo.nl" className="project-card bg-[#12D678] p-8 rounded-2xl w-[300px] md:w-[800px] h-[300px] flex justify-center">
                                 <img className="w-[270px] m-auto" src={AIVO} alt="webfusion"/>
                             </a>
                         </div>
