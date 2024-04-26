@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  width: 100%;
+}
+.social-icon:hover {
+  filter: drop-shadow(0 0 2em #fff);
+  cursor: pointer;
+}
+.social-icon {
+  will-change: filter;
+  transition: filter 300ms;
+}
+.wrapper {
+  position: relative;
+}
+.project-card {
+  transition: all .2s ease-in-out;
+}
+.project-card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
