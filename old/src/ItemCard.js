@@ -1,4 +1,4 @@
-import {AspectRatio, Card, createStyles, Image, Modal, Text, Title} from "@mantine/core";
+import {AspectRatio, Card, createStyles, Image, Modal, Text, Title, Badge} from "@mantine/core";
 import {useState} from "react";
 
 const ItemCard = ({article}) => {
@@ -73,8 +73,14 @@ const ItemCard = ({article}) => {
                     }
                 </Text>
                 <Text className={classes.title} mt={5}>
-                    {article.title}
+                    <span style={{marginRight: "8px"}}>{article.title}</span>
+                    {article.badges &&
+                        article.badges.map(badge =>
+                            <Badge style={{marginRight: "8px"}} color="blue">{badge}</Badge>
+                        )
+                    }
                 </Text>
+
             </Card>
         </>
     )
