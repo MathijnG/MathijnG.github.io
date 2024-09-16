@@ -67,7 +67,7 @@ const data = [
         ]
     },
     {
-        title: 'Betawerk (AI & CMS)',
+        title: 'Betawerk (Gen AI search interface)',
         image: betawerk,
         date: new Date("February 1, 2024"),
         component:
