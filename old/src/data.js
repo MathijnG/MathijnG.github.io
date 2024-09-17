@@ -28,7 +28,10 @@ const data = [
         date: new Date(),
         component:
             <>
-                <p></p>
+                <p>With my company Webfusion, I have completed numerous web design projects, creating custom websites
+                    for various clients.</p>
+                <p>In addition to web design, I have also carried out several development projects</p>
+                <p>Website: <a href="https://web-fusion.nl" target={"_blank"}>web-fusion.nl</a></p>
             </>,
         badges: [
             "Software",
@@ -43,7 +46,11 @@ const data = [
         date: new Date(),
         component:
             <>
-                <p></p>
+                <p>For this project, I developed an innovative AI platform specifically designed to provide teachers
+                    with safe and user-friendly access to AI tools.</p>
+                <p>Additionally, I also built the information website for AI voor Onderwijs and applied various online
+                    marketing techniques.</p>
+                <p>Website: <a href="https://aivooronderwijs.nl" target={"_blank"}>aivooronderwijs.nl</a></p>
             </>,
         badges: [
             "Software",
@@ -58,7 +65,10 @@ const data = [
         date: new Date(),
         component:
             <>
-                <p></p>
+                <p>At AI-VO, I developed an information website and implemented marketing strategies.</p>
+                <p>With AI-VO, I have conducted numerous workshops on AI, providing participants with practical
+                    knowledge and tools to use AI in their own field.</p>
+                <p>Website: <a href="https://ai-vo.nl" target={"_blank"}>ai-vo.nl</a></p>
             </>,
         badges: [
             "Webdesign",

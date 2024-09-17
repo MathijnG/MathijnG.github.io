@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.747ee72a.js",
+    "main.js": "/static/js/main.d3d727e8.js",
     "static/media/coolevents.png": "/static/media/coolevents.7ce03852c929de56c6f3.png",
     "static/media/containervervoer.png": "/static/media/containervervoer.dcd260cee0bd3ee45a26.png",
     "static/media/logo-NLP.png": "/static/media/logo-NLP.4e1dc3bd9a23ba9dc269.png",
@@ -13,14 +13,17 @@
     "static/media/mediaan_logo.jpeg": "/static/media/mediaan_logo.2138627d65b5c666b89e.jpeg",
     "static/media/CoolEventsLogo.png": "/static/media/CoolEventsLogo.a987b0a875986098be9d.png",
     "static/media/default.jpg": "/static/media/default.59583c4346cc9fae6896.jpg",
+    "static/media/aivooronderwijs.png": "/static/media/aivooronderwijs.893890419449d6fd276d.png",
     "static/media/ocpp.png": "/static/media/ocpp.676a544e76dcbe565cb6.png",
     "static/media/basworld.jpg": "/static/media/basworld.ee64aee9b374905c7fbd.jpg",
     "static/media/unlock.png": "/static/media/unlock.bc6fa50ccb6927bdb698.png",
+    "static/media/WebfusionLogo.png.webp": "/static/media/WebfusionLogo.png.34457f6723747753abb5.webp",
+    "static/media/logo with space.png": "/static/media/logo with space.d645e54cad88e3c26946.png",
     "static/media/oneblinq.png": "/static/media/oneblinq.9989d37a1f1703d6180b.png",
     "index.html": "/index.html",
-    "main.747ee72a.js.map": "/static/js/main.747ee72a.js.map"
+    "main.d3d727e8.js.map": "/static/js/main.d3d727e8.js.map"
   },
   "entrypoints": [
-    "static/js/main.747ee72a.js"
+    "static/js/main.d3d727e8.js"
   ]
 }
