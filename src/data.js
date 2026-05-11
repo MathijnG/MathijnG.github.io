@@ -3,6 +3,8 @@ import AIVO from "./assets/ai-vo-logo-white-300x80.png";
 import AIVoorOnderwijs from "./assets/aivooronderwijs-white.png";
 import MarketigerLogo from "./assets/marketiger-logo.webp";
 import SchoolgenLogo from "./assets/schoolgen-logo.png";
+import AtletiekTrainingenImage from "./assets/atletiektrainingen.png";
+import STBLandgraafLogo from "./assets/stb-landgraaf.png";
 import BasWorld from "../old/src/assets/basworld.jpg";
 import Betawerk from "../old/src/assets/betawerk.png";
 import ContainerVervoer from "../old/src/assets/containervervoer.png";
@@ -34,6 +36,34 @@ export const projects = [
     mediaType: "logo",
     logoTone: "light",
     href: "https://web-fusion.nl",
+  },
+  {
+    id: "stb-landgraaf",
+    title: "STB Landgraaf",
+    kind: "Sports Club Website",
+    year: "2026",
+    blurb:
+      "Designed and built the website for STB Landgraaf, including news, training information, membership flows, events, and sponsor visibility.",
+    tags: ["Webdesign"],
+    accent: "cyan",
+    preview: "prism",
+    image: STBLandgraafLogo,
+    roundedPreview: true,
+    href: "https://stblandgraaf.nl",
+  },
+  {
+    id: "atletiektrainingen",
+    title: "Atletiek Trainingen",
+    kind: "Sports Website",
+    year: "2026",
+    blurb:
+      "Designed and built atletiektrainingen.nl with practical drills, exercises, and games for running, jumping, and throwing disciplines.",
+    tags: ["Webdesign"],
+    accent: "cyan",
+    preview: "prism",
+    image: AtletiekTrainingenImage,
+    roundedPreview: true,
+    href: "https://atletiektrainingen.nl",
   },
   {
     id: "ai-voor-onderwijs",
@@ -73,7 +103,7 @@ export const projects = [
     year: "2024-2026",
     blurb:
       "Schoolgen is an AI platform for education that helps schools and teachers create and improve learning materials faster. I built the full platform end-to-end, from product and interface to the public website.",
-    tags: ["Software", "Webdesign", "AI"],
+    tags: ["Software", "Frontend", "Webdesign", "AI"],
     accent: "cyan",
     preview: "prism",
     image: SchoolgenLogo,
@@ -96,7 +126,7 @@ export const projects = [
     imagePadding: "32px",
     image: MarketigerLogo,
     mediaType: "logo",
-    logoTone: "light",
+    logoTone: "dark",
     href: "https://marketiger3d.com",
   },
   {
@@ -106,12 +136,12 @@ export const projects = [
     year: "2024",
     blurb:
       "Designed and validated a proof of concept for a generative search interface over knowledge bases.",
-    tags: ["Software", "AI"],
+    tags: ["Software", "Frontend", "AI"],
     accent: "cyan",
     preview: "prism",
     image: Betawerk,
     mediaType: "logo",
-    logoTone: "light",
+    logoTone: "dark",
   },
   {
     id: "innobeweeglab",
@@ -120,7 +150,7 @@ export const projects = [
     year: "2023",
     blurb:
       "Built a gamified web survey concept to collect local insights and support healthier neighborhoods.",
-    tags: ["Software", "School project"],
+    tags: ["Software", "Frontend", "School project"],
     accent: "amber",
     preview: "fold",
     image: InnoBeweegLab,
@@ -161,12 +191,12 @@ export const projects = [
     year: "2022",
     blurb:
       "Developed a license management system for Figma plugins in a team project for Stuurmen.",
-    tags: ["Software", "School project"],
+    tags: ["Software", "Frontend", "School project"],
     accent: "emerald",
     preview: "atlas",
     image: OneBlinq,
     mediaType: "logo",
-    logoTone: "light",
+    logoTone: "dark",
   },
   {
     id: "basworld-ticketing",
@@ -175,7 +205,7 @@ export const projects = [
     year: "2021",
     blurb:
       "Implemented an internal ticket platform for BAS World using Laravel during my internship period.",
-    tags: ["Software", "School project"],
+    tags: ["Software", "Frontend", "School project"],
     accent: "violet",
     preview: "ritual",
     image: BasWorld,
@@ -245,8 +275,6 @@ export const projects = [
     accent: "emerald",
     preview: "atlas",
     image: Growbotic,
-    mediaType: "logo",
-    logoTone: "light",
   },
   {
     id: "towerdefence",
@@ -300,7 +328,6 @@ export const projects = [
     image: NieuwLerenParkstad,
     mediaType: "logo",
     logoTone: "light",
-    href: "https://nieuwlerenparkstad.nl",
   },
   {
     id: "container-vervoer",

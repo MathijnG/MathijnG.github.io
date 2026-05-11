@@ -388,6 +388,10 @@ a {
   display: block;
 }
 
+.project-preview-image--rounded {
+  border-radius: 12px;
+}
+
 .project-preview-image--logo {
   width: auto;
   max-width: min(88%, 300px);

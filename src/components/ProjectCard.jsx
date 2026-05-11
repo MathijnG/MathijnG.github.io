@@ -7,6 +7,7 @@ export default function ProjectCard({ project }) {
   const Preview = PREVIEWS[project.preview];
   const [accentA, accentB] = ACCENT[project.accent] || ACCENT.violet;
   const isLogo = project.mediaType === "logo";
+  const hasRoundedPreview = project.roundedPreview === true;
   const logoTone = project.logoTone || "dark";
 
   const onMove = (event) => {
@@ -52,7 +53,9 @@ export default function ProjectCard({ project }) {
             >
               {project.image ? (
                 <img
-                  className={`project-preview-image ${isLogo ? "project-preview-image--logo" : ""}`}
+                  className={`project-preview-image ${isLogo ? "project-preview-image--logo" : ""} ${
+                    hasRoundedPreview ? "project-preview-image--rounded" : ""
+                  }`}
                   src={project.image}
                   alt={`${project.title} preview`}
                   loading="lazy"
